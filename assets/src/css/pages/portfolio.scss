@@ -1,0 +1,84 @@
+/*
+	Portfolio styles
+*/
+
+.naomimoon-portfolio {
+	margin-top: 52px;
+	.portfolio-heading {
+		font-size: 40px;
+		@media (max-width: $size-phone) {
+			font-size: 30px;
+		}
+		text-align: center;
+		top: 54px;
+		text-transform: uppercase;
+    	letter-spacing: 5px;
+	}
+	p {
+		line-height: 30px;
+	}
+	&__content {
+		box-shadow: 0 0 15px rgba(0,0,0,.4);
+	}
+	&__hero {
+		width: 100%;
+		padding: 32vh 0;
+		background-size: cover;
+		background-attachment: fixed;
+		.hero-card {
+			backdrop-filter: blur(5px);
+			padding: 20px;
+			border-radius: 20px;
+			max-width: 570px;
+			box-shadow: 0 0 15px rgba(0,0,0,.4);
+			@media (max-width: $size-tablet) {
+				max-width: 100%;
+				border-radius: 0;
+			}
+			margin: 0 auto;
+			h1 {
+				text-transform: lowercase;
+				font-weight: 600;
+				font-size: 80px;
+				margin: 20px 0 15px;
+				line-height: 100px;
+				cursor: default;
+			}
+			h3 {
+				font-size: 22px;
+				margin: 30px 0;
+				font-weight: 300;
+			}
+			h4 {
+				font-weight: 200;
+				padding-bottom: 15px;
+			}
+		}
+	}
+	&__about {
+		.square-border {
+			border-radius: 10px;
+			max-width: 762px;
+			margin: auto;
+			@media (max-width: $size-tablet) {
+				border: none;
+			}
+		}
+		p {
+			max-width: 710px;
+			margin: auto;
+		}
+	}
+	&__certs {
+		ul {
+			margin-left: auto;
+			font-size: 19px;
+		}
+	}
+	.seperator {
+		width: 100%;
+		padding: 1px 0;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}

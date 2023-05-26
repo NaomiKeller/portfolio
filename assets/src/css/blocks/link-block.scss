@@ -1,0 +1,138 @@
+.link-block {
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 70px 0 0;
+	min-height: 100vh;
+	@media (max-width: 500px) {
+		padding: 55px 0 0;
+	}
+	.link-card {
+		max-width: 390px;
+		margin: 0 auto;
+		border-radius: 10px;
+		padding: 35px;
+		transform: scale(.9);
+		@media (max-width: 500px) {
+			padding: 35px 20px;
+			transform: scale(1);
+		}
+	}
+	.row {
+		gap: 14px;
+		justify-content: center;
+		max-width: 770px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.col {
+		flex: 0 0 100%;
+		text-align: left;
+		border-radius: 50px;
+		position: relative;
+		padding: 0;
+		display: flex;
+		@media (max-width: 540px) {
+			flex: 0 0 100%;
+		}
+		transition: ease-in-out .3s;
+		&:hover {
+			cursor: pointer;
+			.item-action-wrap {
+				display: -webkit-inline-box;
+				margin: auto;
+				top: 20%;
+				left: 375px;
+			}
+			.naomi-mediaupload {
+				display: block;
+			}
+		}
+		p {
+			flex-basis: 85%;
+			margin: auto;
+			font-size: 18px;
+			padding: 12px 27px;
+			@media (max-width: 460px) {
+				font-size: 15px;
+			}
+			a {
+				text-decoration: none;
+				padding: 15px 100% 15px 0;
+				&:hover {
+					color: black;
+				}
+			}
+		}
+		.image {
+			flex-basis: 15%;
+			text-align: center;
+			margin: auto;
+			padding: 7px 15px 0 0;
+			.link-item-icon {
+				max-width: 33px;
+			}
+		}
+		.naomi-mediaupload {
+			position: absolute;
+			right: 66px;
+			background: $background_dark;
+			color: $purple;
+			display: none;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			&:hover {
+				background: $purple;
+				color: $background_dark;
+			}
+		}
+	}
+	.link-avatar {
+		text-align: center;
+		&:hover {
+			.naomi-mediaupload {
+				display: block;
+			}
+		}
+		.naomi-mediaupload {
+			position: absolute;
+			background: $purple;
+			color: $background_dark;
+			display: none;
+			margin-left: 159px;
+			margin-top: 34px;
+			&:hover {
+				background: $background_dark;
+				color: $purple;
+			}
+		}
+		img {
+			max-width: 100px;
+			border-radius: 100px;
+		}
+	}
+	.link-heading h2 {
+		padding: 13px 15px 10px;
+		max-width: 738px;
+		margin: 0;
+		text-align: center;
+		font-size: 27px;
+		font-weight: 400;
+	}
+	.link-subheading h4 {
+		text-align: center;
+		font-weight: 600;
+		margin-bottom: 37px;
+	}
+	.link-footer {
+		color: $background_dark;
+		text-align: center;
+		font-size: 14px;
+		margin-top: -20px;
+		padding-bottom: 20px;
+		a {
+			color: $background_dark;
+			text-decoration: underline;
+		}
+	}
+}
